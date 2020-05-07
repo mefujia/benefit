@@ -1,0 +1,15 @@
+{
+  "name": "benefit_web",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@vant/weapp": "^1.2.1",
+    "miniprogram-sm-crypto": "^0.1.0"
+  }
+}

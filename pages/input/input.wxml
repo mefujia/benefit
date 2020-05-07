@@ -1,0 +1,50 @@
+<!--pages/input/input.wxml-->
+<van-grid column-num="3" square>
+  <van-grid-item icon="/images/jilu/zhongcan.png" text="饮食" />
+  <van-grid-item icon="/images/jilu/yundong.png" text="运动" />
+  <van-grid-item icon="/images/jilu/iconjsyl.png" text="压力" />
+  <van-grid-item icon="/images/jilu/iconsg.png" text="身高" />
+  <van-grid-item icon="/images/jilu/icontz.png" text="体重" />
+  <van-grid-item icon="/images/jilu/iconxd.png" text="心率" />
+  <van-grid-item icon="/images/jilu/icontw.png" text="体温" />
+  <van-grid-item icon="/images/jilu/iconxy.png" text="血压" />
+  <van-grid-item icon="/images/jilu/iconxt.png" text="血糖" />
+</van-grid>
+
+<van-cell title="展示弹出层" is-link bind:click="showPopup" />
+
+<van-popup
+  show="{{ show }}"
+  round
+  position="bottom"
+  custom-style="height: 20%"
+  bind:close="onClose"
+><van-field
+    value="{{ value }}"
+    placeholder="请输入用户名"
+    border="{{ false }}"
+    type="digit"
+    focus="true"
+    bind:change="onChange"
+  /></van-popup>
+ 
+
+<view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="container">
+      <view>
+        <view>
+          <button plain type="primary" bindtap="getImg">上传图片</button>
+          <!-- <button bindtap="getImg">上传图片</button> -->
+          <view class="divLine"></view>
+        </view>
+        <view wx:for="{{imgSrc}}" wx:key="{{index}}">
+          <view bindlongpress="deleteImage" data-index="{{index}}">
+            <image mode="aspectFit" src="{{item}}" />
+          </view>
+        </view>
+        <button type="primary" form-type="submit" class='an'>发布</button>
+      </view>
+    </view>
+  </form>
+</view>

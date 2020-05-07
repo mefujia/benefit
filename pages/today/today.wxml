@@ -1,0 +1,17 @@
+<!--pages/today/today.wxml-->
+<view>
+<swiper class='lunbo' indicator-dots='true' autoplay='true' interval='4000'>
+    <swiper-item>
+      <image src='/images/swiper/a.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/swiper/b.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/swiper/c.jpg'></image>
+    </swiper-item>
+  </swiper>
+  <van-cell-group title="今日数据">
+    <van-cell title="运动步数" value="{{step}}"/>
+  </van-cell-group>
+</view>

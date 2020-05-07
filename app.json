@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/today/today",
+    "pages/data/data",
+    "pages/input/input",
+    "pages/user/user",
+    "pages/predict/predict",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar": {
+    "color": "#aab2bf",
+    "selectedColor": "#2f83fd",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "text": "今日",
+        "pagePath": "pages/today/today",
+        "iconPath": "images/tabbar/577daqia.png",
+        "selectedIconPath": "images/tabbar/577daqia-s.png"
+      },
+      {
+        "text": "统计",
+        "pagePath": "pages/data/data",
+        "iconPath": "images/tabbar/tongji.png",
+        "selectedIconPath": "images/tabbar/tongji-s.png"
+      },
+      {
+        "text": "记录",
+        "pagePath": "pages/input/input",
+        "iconPath": "images/tabbar/jia1.png",
+        "selectedIconPath": "images/tabbar/jia1-s.png"
+      },
+      {
+        "text": "预测",
+        "pagePath": "pages/predict/predict",
+        "iconPath": "images/tabbar/faxian.png",
+        "selectedIconPath": "images/tabbar/faxian-s.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/user/user",
+        "iconPath": "images/tabbar/user.png",
+        "selectedIconPath": "images/tabbar/user-s.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "健康管理",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-dialog": "@vant/weapp/dialog/index",
+    "van-panel": "@vant/weapp/panel/index"
+  }
+}
